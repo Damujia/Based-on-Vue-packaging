@@ -56,7 +56,7 @@ export default {
   },
   watch: {
     fworkshows1: function (val, oldVal) {
-      this.$emit('update: fworkshows', val)
+      this.$emit('update:fworkshows', val)
       localStorage.setItem(this.localName, val)
       if (val === '') {
         this.checkAll2 = false
